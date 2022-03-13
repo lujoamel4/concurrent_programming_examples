@@ -1,8 +1,8 @@
 package integerarrayssort;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-
 import static integerarrayssort.Utils.min;
 import static integerarrayssort.Utils.sliceArray;
 
@@ -34,39 +34,11 @@ public class Merger {
         return result;
     }
 
-    public static Integer[] merge(Integer low, Integer middle, Integer high, Integer[] array) {
-        List<Integer> result = new ArrayList();
-        Integer count1 = low;
-        Integer count2 = middle;
-        while (count1 < middle && count2 < high) {
-            if (array[count1] < array[count2]) {
-                result.add(array[count1]);
-                count1++;
-                if (count1 >= middle) {
-                    for (int index2 = count2; index2 < high; index2++) {
-                        result.add(array[index2]);
-                    }
-                }
-            } else {
-                result.add(array[count2]);
-                count2++;
-                if (count2 >= high) {
-                    for (int index1 = count1; index1 < middle; index1++) {
-                        result.add(array[index1]);
-                    }
-                    count1 = middle; //terminate
-                }
-            }
-        }
-
-        return result.toArray(new Integer[result.size()]);
-    }
-
     public static Integer[] merge(Integer[] integers, int blockSize) {
         Integer[] result = new Integer[0];
 
-        Integer low = 0;
-        Integer high = min(blockSize, integers.length);
+        int low = 0;
+        int high = min(blockSize, integers.length);
 
         while (low < integers.length) {
             Integer[] sliceArray = sliceArray(low, high, integers);

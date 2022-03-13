@@ -1,11 +1,8 @@
 package integerarrayssort;
 
-import integerarrayssort.RandomNumbers;
-import integerarrayssort.SequentialSort;
-import integerarrayssort.SortCheck;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SequentialSortTest {
 

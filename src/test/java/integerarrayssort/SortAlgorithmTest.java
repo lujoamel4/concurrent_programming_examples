@@ -1,8 +1,6 @@
 package integerarrayssort;
 
-import integerarrayssort.SortAlgorithm;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class SortAlgorithmTest {
 

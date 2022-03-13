@@ -1,11 +1,11 @@
 package integerarrayssort;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PartialSortTest {
     private final SortCheck sortCheck = new SortCheck();

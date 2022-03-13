@@ -1,14 +1,13 @@
 package integerarrayssort;
 
-import integerarrayssort.SortCheck;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SortCheckTest {
 
 
-    private SortCheck checker =  new SortCheck();
+    private final SortCheck checker =  new SortCheck();
 
 
     @Test
