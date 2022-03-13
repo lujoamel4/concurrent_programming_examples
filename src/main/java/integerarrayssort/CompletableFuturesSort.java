@@ -8,9 +8,9 @@ import java.util.concurrent.CompletableFuture;
 import static integerarrayssort.Merger.merge;
 import static integerarrayssort.Utils.min;
 
-public class ParallelSort {
+public class CompletableFuturesSort {
 
-    public static Integer[] executeAsync(Integer[] integers) {
+    public static Integer[] execute(Integer[] integers) {
         System.out.println("integers size=" + integers.length);
         SortAlgorithm sortAlgorithm = new SortAlgorithm();
         int threadsCount = 10;
